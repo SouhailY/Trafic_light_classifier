@@ -9,11 +9,10 @@ In this notebook, we'll pre-process these images, extract features that will hel
 2. **Pre-processing**. 
     The input images and output labels need to be standardized. This way, we can analyze all the input images using the same classification pipeline, and we know what output to expect when we eventually classify a *new* image. 
 3. **Feature extraction**. 
-    Next, we'll extract some features from each image that will help distinguish and eventually classify these images.   
+    Next, we'll extract some features from each image that will help distinguish and eventually classify these images. In this case we will be using brightness feature using [HSV color space](https://en.wikipedia.org/wiki/HSL_and_HSV).
 4. **Classification and visualizing error**. 
     Finally, we'll write one function that uses our feature to classify *any* traffic light image. This function will take in an image and output a label. We'll also be given code to determine the accuracy of the classification model.       
 5. **Evaluate the model**.
     To pass this project, the classifier must be >90% accurate and never classify any red lights as green for safety reasons.
     
 ## Feature used : brightness feature using HSV color space.
-https://en.wikipedia.org/wiki/HSL_and_HSV
